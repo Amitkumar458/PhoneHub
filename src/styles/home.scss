@@ -1,0 +1,160 @@
+@import "colors";
+
+.main1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-bottom: 0%;
+
+    >img {
+        width: 60%;
+        margin: 2rem;
+        margin-right: 0%;
+    }
+
+    >div {
+        >h1 {
+            font: 500 2rem "roboto";
+            color: red;
+        }
+    }
+}
+
+.main2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    padding-top: 0%;
+
+    >img {
+        width: 50%;
+        margin: 2rem;
+        margin-right: 0%;
+    }
+
+    >div {
+        padding: 16px;
+
+        >h1 {
+            font: 500 2rem "roboto";
+            color: $third;
+
+            >span {
+                background-color: orange;
+                color: black;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.main3 {
+    width: 100%;
+    min-height: 70vh;
+    max-height: fit-content;
+    background-color: $second;
+    background-color: rgb(90, 24, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 600px 0 0 600px;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        >h1 {
+            margin-bottom: 40px;
+            margin-top: -40px;
+        }
+
+        >article {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            >a {
+                >div {
+                    animation: imgUp 0.7s linear infinite alternate;
+                    margin: 1rem;
+                    height: 10rem;
+                    width: 10rem;
+                    background-color: $first;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: $dark;
+                    cursor: pointer;
+                    transition: all 0.5s;
+                    font-size: 3rem;
+
+                    &:hover {
+                        filter: invert(1);
+                    }
+
+                    >p {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        font-family: "roboto";
+                    }
+
+                }
+            }
+        }
+
+        >h1 {
+            color: $first;
+            text-transform: uppercase;
+            border-bottom: 2px solid $first;
+        }
+    }
+}
+
+@keyframes imgUp {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.main4 {
+    width: 100%;
+    height: fit-content;
+    color: white;
+    background-color: $second;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 0px 600px 600px 0px;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem;
+
+        >h1 {
+            color: $first;
+            border-bottom: 2px solid $first;
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

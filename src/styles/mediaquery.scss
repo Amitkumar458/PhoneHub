@@ -1,0 +1,58 @@
+
+@media screen and (max-width: 700px) {
+    .main3 {
+        border-radius: 80px 0 0 80px;
+        >div {
+            >h1 {
+                margin-bottom: 40px;
+                margin-top: -0px;
+            }    
+            > article {
+                > a {
+                    > div {
+                        height: 6rem;
+                        width: 6rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .main4 {
+        border-radius: 0 80px 80px 0;
+    }
+    .main2 {
+        > div {
+            > h1 {
+                font: 500 1.5rem "roboto";
+            }
+            > h3 {
+                font: 500 0.8rem "roboto";
+            }
+        }
+    }
+    .main1 {
+        > div {
+            > h1 {
+                font: 500 1.5rem "roboto";
+            }
+            > h3 {
+                font: 500 0.8rem "roboto";
+            }
+        }
+    }
+    .nav {
+        > main {
+            width: 100%;
+            justify-content: center;
+            > a {
+                margin: 0.7rem;
+                font-size: medium;
+                font-weight: 500;
+            }
+        }
+        > h1 {
+            display: none;
+        }
+    }
+}
